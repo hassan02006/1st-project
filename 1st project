@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+<title>Asia Wheels</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+    outline: none;
+}
+
+#search-button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+.header {
+font-size: 60px;
+font-weight: bold;
+color: #fff;
+text-align: center; 
+text-shadow: 
+ 1px 1px 0 rgba(0, 0, 0, 0.2), 
+ 2px 2px 0 rgba(0, 0, 0, 0.2), 
+ 3px 3px 0 rgba(0, 0, 0, 0.2), 
+ 4px 4px 0 rgba(0, 0, 0, 0.2); 
+background: linear-gradient(135deg, aqua, navy); 
+padding: 20px; 
+border-radius: 10px; 
+transform: translateZ(0); 
+        }
+</style>
+</head>
+<body>
+<header>
+<h1>Find used cars in Pakistan</h1>
+<h2>With thousands of cars, we have just the right one for you</h2>
+</header>
+  <div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" id="search-input" name="query" placeholder="Search..." required>
+            <button type="submit" id="search-button">Search</button>
+        </form>
+    </div>
+</body>
+</html>
